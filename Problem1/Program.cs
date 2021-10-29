@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 /* 1000 den küçük 3 veya 5 in katlarının toplamını bulunuz */
 namespace Problem1
 {
