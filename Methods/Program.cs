@@ -48,6 +48,20 @@ namespace Methods
             return PrimeDivisors_;
         }
     }
+    public class Palindrome
+    {
+        public static bool IsPalindrome(int number)
+        {
+            for (int i = 0; i < number.ToString().Length / 2; i++)
+            {
+                if (number.ToString()[i] != number.ToString()[number.ToString().Length - (i + 1)])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
     class Program
     {
         static void Main(string[] args)

@@ -21,6 +21,7 @@ namespace Problem1
 
             }
             Console.WriteLine(toplam);
+            Console.ReadLine();
         }
     }
 }
