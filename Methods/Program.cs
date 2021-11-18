@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-/*Problemleri çözerken sık kullanılan methodlar*/
+/*Usefull methods*/
 namespace Methods
 {
     public class Prime
@@ -71,7 +71,11 @@ namespace Methods
         }
     }
     public class Palindrome
-    {
+    {/// <summary>
+     /// Returns the given number is Palindrome true/false
+     /// </summary>
+     /// <param name="number"></param>
+     /// <returns></returns>
         public static bool IsPalindrome(int number)
         {
             for (int i = 0; i < number.ToString().Length / 2; i++)
@@ -85,7 +89,12 @@ namespace Methods
         }
     }
     public class Gcd
-    {
+    {/// <summary>
+    /// Return the Greatest Common Divisor of two number
+    /// </summary>
+    /// <param name="num1"></param>
+    /// <param name="num2"></param>
+    /// <returns></returns>
         public static int GetGcd(int a, int b)
         {
 
@@ -101,11 +110,21 @@ namespace Methods
 
     }
     public class Lcm
-    {
+    {/// <summary>
+    /// Returns Least Common Multiplier of given two number
+    /// </summary>
+    /// <param name="num1"></param>
+    /// <param name="num2"></param>
+    /// <returns></returns>
         public static int GetLcm(int a, int b)
         {
             return a * (b / Gcd.GetGcd(a, b));
         }
+        /// <summary>
+        /// Return Least Common Multiplier of given integer List
+        /// </summary>
+        /// <param name="numberList"></param>
+        /// <returns></returns>
         public static int GetLcms(List<int> numbers)
         {
             if (numbers.Count < 2)
