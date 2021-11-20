@@ -30,7 +30,7 @@ namespace Methods
             return true;
         }
         /// <summary>
-        /// Returns a List of Divisors of Given number. Use it in foreachLoop
+        /// Returns a List of Not Repeated Prime Divisors of Given number.Not repeated.Use it in foreachLoop
         /// </summary>
         /// <param name="number"></param>
         /// <returns>System.Collections.Generic.List`1[System.Int64]</returns>
@@ -47,6 +47,11 @@ namespace Methods
             }
             return PrimeDivisors_;
         }
+        /// <summary>
+        /// Returns a List of All Prime Divisors of Given number.Use it in foreachLoop
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         public static List<long> PrimeDivisorsAll(long number)
         {
 
