@@ -12,7 +12,7 @@ namespace Methods
         /// <returns></returns>
         public static bool IsPrime(long number)
         {
-            if (number < 4)
+            if (number < 4 &&number>1)
             {
                 return true;
             }
