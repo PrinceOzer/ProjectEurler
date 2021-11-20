@@ -3,25 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1", "Problem1\Problem1.csproj", "{9BF7AB64-C1E0-4414-BFBF-1D4CAA677D77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem001", "Problem1\Problem001.csproj", "{9BF7AB64-C1E0-4414-BFBF-1D4CAA677D77}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem2", "Problem2\Problem2.csproj", "{F9B99518-EB47-4F96-B9A3-1C325FDBFFC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem002", "Problem2\Problem002.csproj", "{F9B99518-EB47-4F96-B9A3-1C325FDBFFC8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem3", "Problem3\Problem3.csproj", "{47598AD3-02ED-4E39-BA2B-B5BFB880108F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem003", "Problem3\Problem003.csproj", "{47598AD3-02ED-4E39-BA2B-B5BFB880108F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.csproj", "{4B22A9FD-1E17-4EA4-B14F-DC263E5C65B8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem4", "Problem4\Problem4.csproj", "{15D94029-9712-4C0D-B7D0-978E91FDDEF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem004", "Problem4\Problem004.csproj", "{15D94029-9712-4C0D-B7D0-978E91FDDEF9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem5", "Problem5\Problem5.csproj", "{62FA2AEA-FF1B-479A-9257-E8D5264784D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem005", "Problem5\Problem005.csproj", "{62FA2AEA-FF1B-479A-9257-E8D5264784D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem6", "Problem6\Problem6.csproj", "{EE172995-7869-42B3-984B-28D687E066BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem006", "Problem6\Problem006.csproj", "{EE172995-7869-42B3-984B-28D687E066BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem7", "Problem7\Problem7.csproj", "{E10E8C40-083F-46A3-B69A-F36EE8BB88D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem007", "Problem7\Problem007.csproj", "{E10E8C40-083F-46A3-B69A-F36EE8BB88D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem8", "Problem8\Problem8.csproj", "{20FBAEF2-6380-4F35-A00C-1B087184F908}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem008", "Problem8\Problem008.csproj", "{20FBAEF2-6380-4F35-A00C-1B087184F908}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem9", "Problem9\Problem9.csproj", "{6695AB3D-8377-453D-A412-CAA48636ADB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem009", "Problem9\Problem009.csproj", "{6695AB3D-8377-453D-A412-CAA48636ADB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem010", "Problem10\Problem010.csproj", "{9307D164-4B91-493F-893B-FA6BA75E1145}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{6695AB3D-8377-453D-A412-CAA48636ADB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6695AB3D-8377-453D-A412-CAA48636ADB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6695AB3D-8377-453D-A412-CAA48636ADB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9307D164-4B91-493F-893B-FA6BA75E1145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9307D164-4B91-493F-893B-FA6BA75E1145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9307D164-4B91-493F-893B-FA6BA75E1145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9307D164-4B91-493F-893B-FA6BA75E1145}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
