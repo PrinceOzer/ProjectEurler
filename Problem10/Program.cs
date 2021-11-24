@@ -6,7 +6,15 @@ namespace Problem10
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            long sum = 0;
+            for (int i = 0; i < 2000000; i++)
+            {
+                if (Methods.Prime.IsPrime(i))
+                {
+                    sum += i;
+                }
+            }
+            Console.WriteLine(sum);
         }
     }
 }
