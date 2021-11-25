@@ -4,97 +4,155 @@ namespace Problem011
 {
     public class DiagonalLine
     {
-        public static int Right(int[,] array, int x, int y)
+        public static int Right(int product, int[,] array, int x, int y)
         {
             if (array[x, y] == 0 || array[x, y + 1] == 0 || array[x, y + 2] == 0 || array[x, y + 3] == 0)
             {
-                return 0;
+                return product;
             }
-            return array[x, y] *
+            else if (product < array[x, y] * array[x, y + 1] * array[x, y + 2] * array[x, y + 3])
+            {
+                return array[x, y] *
                    array[x, y + 1] *
                    array[x, y + 2] *
                    array[x, y + 3];
 
+            }
+            else
+            {
+                return product;
+            }
+
         }
-        public static int Left(int[,] array, int x, int y)
+        public static int Left(int product, int[,] array, int x, int y)
         {
             if (array[x, y] == 0 || array[x, y - 1] == 0 || array[x, y - 2] == 0 || array[x, y - 3] == 0)
             {
-                return 0;
+                return product;
             }
-            return array[x, y] *
+            else if (product < array[x, y] * array[x, y - 1] * array[x, y - 2] * array[x, y - 3])
+            {
+                return array[x, y] *
                    array[x, y - 1] *
                    array[x, y - 2] *
                    array[x, y - 3];
+
+            }
+            else
+            {
+                return product;
+            }
         }
-        public static int Up(int[,] array, int x, int y)
+        public static int Up(int product, int[,] array, int x, int y)
         {
             if (array[x, y] == 0 || array[x - 1, y] == 0 || array[x - 2, y] == 0 || array[x - 3, y] == 0)
             {
-                return 0;
+                return product;
             }
-            return array[x, y] *
+            else if (product < array[x, y] * array[x - 1, y] * array[x - 2, y] * array[x - 3, y])
+            {
+                return array[x, y] *
                    array[x - 1, y] *
                    array[x - 2, y] *
                    array[x - 3, y];
+            }
+            else
+            {
+                return product;
+            }
 
         }
-        public static int Down(int[,] array, int x, int y)
+        public static int Down(int product, int[,] array, int x, int y)
         {
             if (array[x, y] == 0 || array[x + 1, y] == 0 || array[x + 2, y] == 0 || array[x + 3, y] == 0)
             {
-                return 0;
+                return product;
             }
-            return array[x, y] *
+            else if (product < array[x, y] * array[x + 1, y] * array[x + 2, y] * array[x + 3, y])
+            {
+                return array[x, y] *
                    array[x + 1, y] *
                    array[x + 2, y] *
                    array[x + 3, y];
+            }
+            else
+            {
+                return product;
+            }
         }
-        public static int RightUp(int[,] array, int x, int y)
+        public static int RightUp(int product, int[,] array, int x, int y)
         {
             if (array[x, y] == 0 || array[x - 1, y + 1] == 0 || array[x - 2, y + 2] == 0 || array[x - 3, y + 3] == 0)
             {
-                return 0;
+                return product;
             }
-            return array[x, y] *
+            else if (product < array[x, y] * array[x - 1, y + 1] * array[x - 2, y + 2] * array[x - 3, y + 3])
+            {
+                return array[x, y] *
                    array[x - 1, y + 1] *
                    array[x - 2, y + 2] *
                    array[x - 3, y + 3];
+            }
+            else
+            {
+                return product;
+            }
 
         }
-        public static int LeftUp(int[,] array, int x, int y)
+        public static int LeftUp(int product, int[,] array, int x, int y)
         {
             if (array[x, y] == 0 || array[x - 1, y - 1] == 0 || array[x - 2, y - 2] == 0 || array[x - 3, y - 3] == 0)
             {
-                return 0;
+                return product;
             }
-            return array[x, y] *
+            else if (product < array[x, y] * array[x - 1, y - 1] * array[x - 2, y - 2] * array[x - 3, y - 3])
+            {
+                return array[x, y] *
                    array[x - 1, y - 1] *
                    array[x - 2, y - 2] *
                    array[x - 3, y - 3];
+            }
+            else
+            {
+                return product;
+            }
         }
-        public static int RightDown(int[,] array, int x, int y)
+        public static int RightDown(int product, int[,] array, int x, int y)
         {
             if (array[x, y] == 0 || array[x + 1, y + 1] == 0 || array[x + 2, y + 2] == 0 || array[x + 3, y + 3] == 0)
             {
-                return 0;
+                return product;
             }
-            return array[x, y] *
+            else if (product < array[x, y] * array[x + 1, y + 1] * array[x + 2, y + 2] * array[x + 2, y + 3])
+            {
+                return array[x, y] *
                    array[x + 1, y + 1] *
                    array[x + 2, y + 2] *
                    array[x + 2, y + 3];
+            }
+            else
+            {
+                return product;
+            }
 
         }
-        public static int LeftDown(int[,] array, int x, int y)
+        public static int LeftDown(int product, int[,] array, int x, int y)
         {
             if (array[x, y] == 0 || array[x + 1, y - 1] == 0 || array[x + 2, y - 2] == 0 || array[x + 3, y - 3] == 0)
             {
-                return 0;
+                return product;
             }
-            return array[x, y] *
+            else if (product < array[x, y] * array[x + 1, y - 1] * array[x + 2, y - 2] * array[x + 3, y - 3])
+            {
+                return array[x, y] *
                    array[x + 1, y - 1] *
                    array[x + 2, y - 2] *
                    array[x + 3, y - 3];
+            }
+            else
+            {
+                return product;
+            }
         }
 
     }
@@ -143,194 +201,71 @@ namespace Problem011
                 {//123456789
                     if (i < 3 && j < 3)//1 R D RD
                     {
-                        if (product < DiagonalLine.Right(array, i, j))
-                        {
-                            product = DiagonalLine.Right(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Down(array, i, j))
-                        {
-                            product = DiagonalLine.Down(array, i, j);
-                        }
-                        else if (product < DiagonalLine.RightDown(array, i, j))
-                        {
-                            product = DiagonalLine.RightDown(array, i, j);
-                        }
-
-
+                        product = DiagonalLine.Right(product, array, i, j);
+                        product = DiagonalLine.Down(product, array, i, j);
+                        product = DiagonalLine.RightDown(product, array, i, j);
                     }
                     else if (i < 3 && j > 2 && j < 17)//2 R L D RD LD
                     {
-                        if (product < DiagonalLine.Right(array, i, j))
-                        {
-                            product = DiagonalLine.Right(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Left(array, i, j))
-                        {
-                            product = DiagonalLine.Left(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Down(array, i, j))
-                        {
-                            product = DiagonalLine.Down(array, i, j);
-                        }
-                        else if (product < DiagonalLine.RightDown(array, i, j))
-                        {
-                            product = DiagonalLine.RightDown(array, i, j);
-                        }
-                        else if (product < DiagonalLine.LeftDown(array, i, j))
-                        {
-                            product = DiagonalLine.LeftDown(array, i, j);
-                        }
+                        product = DiagonalLine.Right(product, array, i, j);
+                        product = DiagonalLine.Left(product, array, i, j);
+                        product = DiagonalLine.Down(product, array, i, j);
+                        product = DiagonalLine.RightDown(product, array, i, j);
+                        product = DiagonalLine.LeftDown(product, array, i, j);
+
                     }
                     else if (i < 3 && j > 16)//3 L D LD
                     {
-                        if (product < DiagonalLine.Left(array, i, j))
-                        {
-                            product = DiagonalLine.Left(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Down(array, i, j))
-                        {
-                            product = DiagonalLine.Down(array, i, j);
-                        }
-                        else if (product < DiagonalLine.LeftDown(array, i, j))
-                        {
-                            product = DiagonalLine.LeftDown(array, i, j);
-                        }
-
+                        product = DiagonalLine.Left(product, array, i, j);
+                        product = DiagonalLine.Down(product, array, i, j);
+                        product = DiagonalLine.LeftDown(product, array, i, j);
                     }
                     else if (i > 2 && i < 17 && j < 3)//4 R U D RU RD
                     {
-                        if (product < DiagonalLine.Right(array, i, j))
-                        {
-                            product = DiagonalLine.Right(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Up(array, i, j))
-                        {
-                            product = DiagonalLine.Up(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Down(array, i, j))
-                        {
-                            product = DiagonalLine.Down(array, i, j);
-                        }
-                        else if (product < DiagonalLine.RightUp(array, i, j))
-                        {
-                            product = DiagonalLine.RightUp(array, i, j);
-                        }
-                        else if (product < DiagonalLine.RightDown(array, i, j))
-                        {
-                            product = DiagonalLine.RightDown(array, i, j);
-                        }
+                        product = DiagonalLine.Right(product, array, i, j);
+                        product = DiagonalLine.Up(product, array, i, j);
+                        product = DiagonalLine.Down(product, array, i, j);
+                        product = DiagonalLine.RightUp(product, array, i, j);
+                        product = DiagonalLine.RightDown(product, array, i, j);
                     }
                     else if (i > 2 && i < 17 && j > 2 && j < 17)//5 R L U D RU RD LU LD
                     {
-                        if (product < DiagonalLine.Right(array, i, j))
-                        {
-                            product = DiagonalLine.Right(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Left(array, i, j))
-                        {
-                            product = DiagonalLine.Left(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Up(array, i, j))
-                        {
-                            product = DiagonalLine.Up(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Down(array, i, j))
-                        {
-                            product = DiagonalLine.Down(array, i, j);
-                        }
-                        else if (product < DiagonalLine.RightUp(array, i, j))
-                        {
-                            product = DiagonalLine.RightUp(array, i, j);
-                        }
-                        else if (product < DiagonalLine.RightDown(array, i, j))
-                        {
-                            product = DiagonalLine.RightDown(array, i, j);
-                        }
-                        else if (product < DiagonalLine.LeftUp(array, i, j))
-                        {
-                            product = DiagonalLine.LeftUp(array, i, j);
-                        }
-                        else if (product < DiagonalLine.LeftDown(array, i, j))
-                        {
-                            product = DiagonalLine.LeftDown(array, i, j);
-                        }
-
+                        product = DiagonalLine.Right(product, array, i, j);
+                        product = DiagonalLine.Left(product, array, i, j);
+                        product = DiagonalLine.Up(product, array, i, j);
+                        product = DiagonalLine.Down(product, array, i, j);
+                        product = DiagonalLine.RightUp(product, array, i, j);
+                        product = DiagonalLine.RightDown(product, array, i, j);
+                        product = DiagonalLine.LeftUp(product, array, i, j);
+                        product = DiagonalLine.LeftDown(product, array, i, j);
                     }
                     else if (i > 2 && i < 17 && j > 16)//6 L U D LU LD
                     {
-                        if (product < DiagonalLine.Left(array, i, j))
-                        {
-                            product = DiagonalLine.Left(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Up(array, i, j))
-                        {
-                            product = DiagonalLine.Up(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Down(array, i, j))
-                        {
-                            product = DiagonalLine.Down(array, i, j);
-                        }
-                        else if (product < DiagonalLine.LeftUp(array, i, j))
-                        {
-                            product = DiagonalLine.LeftUp(array, i, j);
-                        }
-                        else if (product < DiagonalLine.LeftDown(array, i, j))
-                        {
-                            product = DiagonalLine.LeftDown(array, i, j);
-                        }
+                        product = DiagonalLine.Left(product, array, i, j);
+                        product = DiagonalLine.Up(product, array, i, j);
+                        product = DiagonalLine.Down(product, array, i, j);
+                        product = DiagonalLine.LeftUp(product, array, i, j);
+                        product = DiagonalLine.LeftDown(product, array, i, j);
                     }
                     else if (i > 16 && j < 3)//7 R U RU
                     {
-                        if (product < DiagonalLine.Right(array, i, j))
-                        {
-                            product = DiagonalLine.Right(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Up(array, i, j))
-                        {
-                            product = DiagonalLine.Up(array, i, j);
-                        }
-                        else if (product < DiagonalLine.RightUp(array, i, j))
-                        {
-                            product = DiagonalLine.RightUp(array, i, j);
-                        }
+                        product = DiagonalLine.Right(product, array, i, j);
+                        product = DiagonalLine.Up(product, array, i, j);
+                        product = DiagonalLine.RightUp(product, array, i, j);
                     }
                     else if (i > 16 && j > 2 && j < 17)//8 R L U RU LU
                     {
-                        if (product < DiagonalLine.Right(array, i, j))
-                        {
-                            product = DiagonalLine.Right(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Left(array, i, j))
-                        {
-                            product = DiagonalLine.Left(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Up(array, i, j))
-                        {
-                            product = DiagonalLine.Up(array, i, j);
-                        }
-                        else if (product < DiagonalLine.RightUp(array, i, j))
-                        {
-                            product = DiagonalLine.RightUp(array, i, j);
-                        }
-                        else if (product < DiagonalLine.LeftUp(array, i, j))
-                        {
-                            product = DiagonalLine.LeftUp(array, i, j);
-                        }
+                        product = DiagonalLine.Right(product, array, i, j);
+                        product = DiagonalLine.Left(product, array, i, j);
+                        product = DiagonalLine.Up(product, array, i, j);
+                        product = DiagonalLine.RightUp(product, array, i, j);
+                        product = DiagonalLine.LeftUp(product, array, i, j);
                     }
                     else if (i > 16 && j > 16)//9 L U LU
                     {
-                        if (product < DiagonalLine.Left(array, i, j))
-                        {
-                            product = DiagonalLine.Left(array, i, j);
-                        }
-                        else if (product < DiagonalLine.Up(array, i, j))
-                        {
-                            product = DiagonalLine.Up(array, i, j);
-                        }
-                        else if (product < DiagonalLine.LeftUp(array, i, j))
-                        {
-                            product = DiagonalLine.LeftUp(array, i, j);
-                        }
+                        product = DiagonalLine.Left(product, array, i, j);
+                        product = DiagonalLine.Up(product, array, i, j);
+                        product = DiagonalLine.LeftUp(product, array, i, j);
                     }
 
 
