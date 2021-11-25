@@ -40,11 +40,29 @@ namespace Promblem011
                 }
 
             }
+            for (int i = 0; i < 20; i++)
+            {
+                for (int j = 0; j < 20; j++)
+                {
+                    switch (i)
+                    {
+                        case < 3:
+                            
+                            break;
+
+                        default:
+                            break;
+                    }
+                }
+            }
+
+
+
             //switch case ile x ve y değerlerinin kontrolünü yapıp ona göre sağ ve sol fncleri ayarlicam
             switch ()
             {
                 default:
-                    break;s
+                    break;
             }
 
         }
