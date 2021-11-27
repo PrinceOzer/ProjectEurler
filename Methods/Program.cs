@@ -12,7 +12,7 @@ namespace Methods
         /// <returns></returns>
         public static bool IsPrime(long number)
         {
-            if (number < 4 &&number>1)
+            if (number < 4 && number > 1)
             {
                 return true;
             }
@@ -95,11 +95,11 @@ namespace Methods
     }
     public class Gcd
     {/// <summary>
-    /// Return the Greatest Common Divisor of two number
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
+     /// Return the Greatest Common Divisor of two number
+     /// </summary>
+     /// <param name="num1"></param>
+     /// <param name="num2"></param>
+     /// <returns></returns>
         public static int GetGcd(int a, int b)
         {
 
@@ -116,11 +116,11 @@ namespace Methods
     }
     public class Lcm
     {/// <summary>
-    /// Returns Least Common Multiplier of given two number
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
+     /// Returns Least Common Multiplier of given two number
+     /// </summary>
+     /// <param name="num1"></param>
+     /// <param name="num2"></param>
+     /// <returns></returns>
         public static int GetLcm(int a, int b)
         {
             return a * (b / Gcd.GetGcd(a, b));
@@ -150,7 +150,7 @@ namespace Methods
                 }
                 return lcm;
             }
-            
+
         }
     }
     class Program
