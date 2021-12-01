@@ -7,7 +7,7 @@ namespace Problem013
         static void Main(string[] args)
         {
             string[] str = System.IO.File.ReadAllLines(@"C:\Users\okkes\source\repos\ProjectEurler\Problem013\numbers\numbers.txt");
-            string sum = "";
+            string firstTen = "";
             int sum_ = 0;
             for (int i = 49; i >= 0; i--)
             {
@@ -17,11 +17,11 @@ namespace Problem013
                     subSum += int.Parse(str[j][i].ToString()); 
                 }
                 subSum += sum_;
-                sum = sum.Insert(0, (subSum % 10).ToString()) ;
+                firstTen = firstTen.Insert(0, (subSum % 10).ToString()) ;
                 sum_ = (subSum - (subSum % 10)) / 10;
             }
-            sum = sum.Insert(0, sum_.ToString());
-            Console.WriteLine(sum.Substring(0,10));
+            firstTen = firstTen.Insert(0, sum_.ToString());
+            Console.WriteLine(firstTen.Substring(0,10));
         }
     }
 }
