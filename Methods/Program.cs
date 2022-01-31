@@ -3,6 +3,46 @@ using System.Collections.Generic;
 /*Usefull methods*/
 namespace Methods
 {
+    public class Numbers
+    {
+        public static long Factorial(int number)
+        {
+            if (number==0)
+            {
+                return 1;
+            }
+            long result = 1;
+            for (int i = 2; i < number + 1; i++)
+            {
+                result *= i;
+            }
+            return result;
+        }
+        /// <summary>
+        /// Combination 2 numbers
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <returns></returns>
+        public static double Combination(double num1,double num2)
+        {
+            if (num2==0 || num1==num2)
+            {
+                return 1;
+            }
+            else if (num2>num1)
+            {
+                return 0;
+            }
+            double result = 1;
+            for (int i = 0; i < num2; i++)
+            {
+                result *= (num1-i)/(i+1);
+            }
+            return result ;
+        }
+        
+    }
     public class Prime
     {
         /// <summary>
@@ -153,11 +193,134 @@ namespace Methods
 
         }
     }
-    class Program
-    {
-        static void Main(string[] args)
+    public class NumbersInWord {
+        /// <summary>
+        /// Returns given number between 1-1000 in words with non space
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns>NumberInWord</returns>
+        public static string NumbersInWords(int number)
+
         {
+
+            string numbersInWords = "";
+
+            Dictionary<int, string> numbers = new Dictionary<int, string>();
+
+            numbers = NumbersFillMethod();
+
+            if (number == 100)
+
+            { numbersInWords = numbers[1] + numbers[number]; }
+
+            else if (numbers.ContainsKey(number))
+
+            { numbersInWords = numbers[number]; }
+
+            else
+
+            {
+
+
+
+                if (number < 100)
+
+                { numbersInWords = numbers[((number) - (number % 10))] + numbers[number % 10]; }
+
+                else
+
+                {
+
+                    if (number % 100 == 0) { numbersInWords = numbers[(number / 100)] + numbers[100]; return numbersInWords; }
+
+                    numbersInWords = numbers[(number / 100)] + numbers[100] + "and";
+
+                    if (numbers.ContainsKey(number % 100))
+
+                    { numbersInWords += numbers[(number) % 100]; }
+
+                    else { numbersInWords += numbers[((number % 100) - (number % 10))] + numbers[number % 10]; }
+
+                }
+
+            }
+
+            return numbersInWords;
+
         }
 
+        public static Dictionary<int, string> NumbersFillMethod()
+
+        {
+
+            Dictionary<int, string> _numbers = new Dictionary<int, string>();
+
+
+
+            _numbers.Add(1, "one");
+
+            _numbers.Add(2, "two");
+
+            _numbers.Add(3, "three");
+
+            _numbers.Add(4, "four");
+
+            _numbers.Add(5, "five");
+
+            _numbers.Add(6, "six");
+
+            _numbers.Add(7, "seven");
+
+            _numbers.Add(8, "eight");
+
+            _numbers.Add(9, "nine");
+
+            _numbers.Add(10, "ten");
+
+            _numbers.Add(11, "eleven");
+
+            _numbers.Add(12, "twelve");
+
+            _numbers.Add(13, "thirteen");
+
+            _numbers.Add(14, "fourteen");
+
+            _numbers.Add(15, "fifteen");
+
+            _numbers.Add(16, "sixteen");
+
+            _numbers.Add(17, "seventeen");
+
+            _numbers.Add(18, "eighteen");
+
+            _numbers.Add(19, "nineteen");
+
+            _numbers.Add(20, "twenty");
+
+            _numbers.Add(30, "thirty");
+
+            _numbers.Add(40, "forty");
+
+            _numbers.Add(50, "fifty");
+
+            _numbers.Add(60, "sixty");
+
+            _numbers.Add(70, "seventy");
+
+            _numbers.Add(80, "eighty");
+
+            _numbers.Add(90, "ninety");
+
+            _numbers.Add(100, "hundred");
+
+            _numbers.Add(1000, "onethousand");
+
+            return _numbers;
+
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args) { }
     }
 }
